@@ -51,6 +51,20 @@ header p {
 
 #player h2 {
   color: #54a399;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+.limit {
+  display: inline-block;
+  max-width: 20rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0;
+  margin-left: 5px;
 }
 
 #player p {
