@@ -1,30 +1,28 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export default function Player() {
+  const playerName = useRef();
   const [userName, setUserName] = useState(null);
-  const [btnClick, setBtnClick] = useState(false);
-
-  function handleUserName(event) {
-    setBtnClick(false);
-    setUserName(event.target.value);
-  }
 
   function handleClick() {
-    setBtnClick(true);
+    setUserName(playerName.current.value);
+    playerName.current.value = "";
+  }
+
+  function handleKeyDown(event) {
+    if (event.key === "Enter") {
+      handleClick();
+    }
   }
 
   return (
     <section id="player">
-      <h2>Welcome {btnClick ? userName : "there!"}</h2>
+      <h2>
+        Welcome <span className="limit">{userName ? userName : "there!"}</span>
+      </h2>
       <p>
-        <input
-          type="text"
-          value={btnClick ? "" : userName}
-          onChange={(event) => handleUserName(event)}
-        />
-        <button disabled={!userName} onClick={handleClick}>
-          Set Name
-        </button>
+        <input ref={playerName} type="text" onKeyDown={handleKeyDown} />
+        <button onClick={handleClick}>Set Name</button>
       </p>
     </section>
   );
