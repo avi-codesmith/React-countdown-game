@@ -42,9 +42,8 @@ Your brain vs time perception.
 ## 🛠️ Tech Stack
 
 - **React JS**
-- **JavaScript (ES6+)**
-- **CSS**
-- **Netlify** (deployment)
+
+<img width="50" alt="download" src="https://github.com/user-attachments/assets/1a65d059-333f-4759-8598-39d061c6609d" />
 
 ---
 
