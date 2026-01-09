@@ -60,7 +60,3 @@ This project demonstrates a strong understanding of modern React concepts:
 - Clean UI state management
 
 ---
-npm install
-
-# Start the development server
-npm start
