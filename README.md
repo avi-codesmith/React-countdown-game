@@ -1,4 +1,4 @@
-# ⏳ The Almost Final Countdown
+# ⚛︎ React Countdown Game
 
 > A fun & challenging **React-based countdown game** that tests how well you can *feel* time — not see it.
 
@@ -60,19 +60,6 @@ This project demonstrates a strong understanding of modern React concepts:
 - Clean UI state management
 
 ---
-
-## 🚀 Getting Started (Run Locally)
-
-Follow these steps to run the project on your local machine:
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
-
-# Navigate into the project directory
-cd your-repo-name
-
-# Install dependencies
 npm install
 
 # Start the development server
