@@ -3,14 +3,17 @@ import Modal from "../components/Modal";
 
 export default function TimerChallenge({ title, targetTime }) {
   const timer = useRef();
+  const dialog = useRef();
   const [started, setStarted] = useState(false);
   const [expired, setexpired] = useState(false);
 
   function handleStart() {
-    timer.current = setStarted(true);
-    setTimeout(() => {
+    timer.current = setTimeout(() => {
       setexpired(true);
+      dialog.current.open();
     }, targetTime * 1000);
+
+    setStarted(true);
   }
 
   function handleStop() {
@@ -19,7 +22,7 @@ export default function TimerChallenge({ title, targetTime }) {
 
   return (
     <>
-      {expired && <Modal targetTime={targetTime} result="lost" />}
+      <Modal ref={dialog} targetTime={targetTime} result="lost" />
       <section className="challenge">
         <h2>{title}</h2>
         <p className="challenge-time">

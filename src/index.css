@@ -121,40 +121,9 @@ header p {
   padding: 2rem;
   margin: 2rem auto;
   color: #221c18;
+  background-color: #00cfdd;
   box-shadow: 0 2px 8px rgba(35, 34, 34, 0.6);
   border-radius: 6px;
-}
-
-.challenge:nth-child(1) {
-  background-color: #00eeff;
-}
-
-.challenge:nth-child(2) {
-  background-color: #00cfdd;
-}
-
-.challenge:nth-child(3) {
-  background-color: #00a5b1;
-}
-
-.challenge:nth-child(4) {
-  background-color: #006b72;
-}
-
-.result-modal.lOne {
-  background-color: black;
-}
-
-.result-modal.lTwo {
-  background-color: blue;
-}
-
-.result-modal.lThree {
-  background-color: green;
-}
-
-.result-modal.lFour {
-  background-color: pink;
 }
 
 .challenge button {
